@@ -1,0 +1,235 @@
+/* Created by Noah Lang on 2/20/2021 */
+/* Edited for Assignment 2 submission on 3/14/2021 */
+
+body 
+{
+	/* 100% totally copying Twitter's font and colors. They work so well! */
+	font-family: 'Helvetica';
+	color: white;
+	text-align: center;
+	margin-top: -13px;
+	background-color: #15202b;
+	font-style: normal;
+	/*background-image: url("../images/background.jpg");
+	background-repeat: repeat;
+	background-size: 100%;*/
+}
+
+html
+{
+	background-color: #15202b;
+}
+
+header
+{
+	/* Expanding animation */
+	animation-name: expand;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+
+	/* Gradient */
+	background: -webkit-linear-gradient(#FFFFFF, #DDDDDD);
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+}
+
+#center
+{
+	text-align: center;
+	justify-content: center;
+}
+
+h2
+{
+	font-size: 100%;
+	background-color: #15202b;
+}
+
+blockquote
+{
+	font-style: italic;
+}
+
+footer
+{
+	font-weight: 700;
+}
+
+ul li
+{
+	/* Changes unordered list bullets to squares instead of circles */
+	list-style-type: square;
+}
+
+/* The video container tag for the video on the home page */
+#ad
+{
+	max-width: 500px;
+}
+
+/* The colored overlay when hovering over a picture from the "Services" page */
+.overlay
+{
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 98.5%;
+	transition: .5s ease;
+	background-color: BLUE;
+	border-radius: 5px;
+}
+
+/* The text overlay when hovering over a picture from the "Services" page */
+.overlayText 
+{
+	top: 50%;
+	left: 50%;
+	color: white;
+	text-align: center;
+	font-size: 20px;
+	position: absolute;
+	-ms-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: center;
+	opacity: 1;
+}
+
+/* The cointainer for the pictures in the "Services" page */
+.celebration
+{
+	display: inline-block;
+	position: relative;
+  	width: 330px;
+}
+
+/* When hovering over the pictures in the "Services" page, make overlay opaque */
+.celebration:hover .overlay
+{
+	opacity: 1;
+}
+
+/* The pictures in the "Services" page */
+.partyImg
+{
+	max-width: 330px;
+	border-radius: 5px;
+}
+
+/* The cointainer the pictures of mom and son on the "About Us" page */
+.peoplePics
+{
+	max-width: 200px;
+	/*box-shadow: 2px 2px 10px #000000;
+	border-radius: 5px;*/
+}
+
+/* The navigation bar's ID */
+#navBar
+{
+	justify-content: center;
+	width: 300px;
+	background-color: lightgray;
+}
+
+/* The div containing the picture on the home page */
+#backyardImage
+{
+	display: inline-block;
+}
+
+/* Website/company name that's at the very top of each page */
+#companyName
+{
+	text-shadow: 2px 2px 3px #000000;
+	font-size: 110%;
+}
+
+/* The unordered list on the "Home" page next to the image of the backyard */
+.pictureDescription 
+{
+	position: relative;
+	margin-top: 14px;
+	display: inline-block;
+	text-align: left;
+  	list-style: inside;
+}
+
+/* The picture on the "Home" page */
+#logoImage
+{
+	float: left;
+	max-width: 300px;
+	box-shadow: 2px 2px 10px #000000;
+	border-radius: 5px;
+}
+
+#logoImage:hover
+{
+	transform: scale(1.01, 1.01);
+}
+
+/* The ID for the actual links themselves in the navigation bar */
+.navBarLink
+{
+	font-size: 60%;
+	text-decoration: none;
+	text-shadow: 2px 2px 3px #000000;
+}
+
+/* The ID for the item in the navbar that corresponds to the current page */
+#currentPageNav
+{
+	font-size: 60%;
+	text-decoration: none;
+	/*color: #00802b;*/
+	color: #CCCCCC;
+	text-shadow: 2px 2px 3px #000000;
+}
+
+/* The ID for the video on the homepage */
+#advideo
+{
+	border-radius: 5px;
+}
+
+/* The ID for the picture of "mom" on the about page */
+#momPic
+{
+	border: 15px solid transparent;
+	border-image: url('../images/heartborder.png') 60;
+}
+
+/* The ID for the picture of me on the about page */
+#sonPic
+{
+	border: 15px solid transparent;
+}
+
+/* Expand animation */
+@keyframes expand
+{
+	0% {transform: scale(1,1);}
+	50% {transform: scale(1.1, 1.1);}
+	100% {transform: scale(1,1);}
+}
+
+/* Styling for links. Removing underlines & coloring them in a custom way */
+a:link
+{
+	color: #1da1f2;
+}
+a:visited
+{
+	color: #1da1f3; /* Technically a different color. I wanted to keep the look I currently have, sorry :( */
+}
+a:active, a:hover
+{
+	color: #1877b2;
+	transition: color .2s ease-in-out;
+}

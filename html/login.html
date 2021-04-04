@@ -1,0 +1,158 @@
+<!doctype html>
+
+<!-- Created by Noah Lang on 2/20/2021 -->
+<!-- Edited for Assignment 2 submission on 3/14/2021 -->
+
+<html lang="en">
+	<!-- Text & image for website tab -->
+	<head>
+		<title>Mom's Backyard</title>
+		<link rel="shortcut icon" type="image/jpg" href="images/mom.png"/>
+
+		<!-- Linking CSS -->
+		<link rel="stylesheet" href="../css/stylesheet.css">
+
+		<meta charset="UTF-8">
+	</head>
+
+	<body>
+		<h1> 
+			<br>
+			<!-- Website name at top of page -->
+			<span id="companyName"> Mom's Backyard Venue </span>
+
+			&nbsp; &nbsp;
+
+			<!-- Links to other pages of the site. Current page is not clickable. -->
+	      	<a href="../index.html" class="navBarLink">Home</a> &nbsp;
+	      	<a href="../html/services.html" class="navBarLink">Services</a> &nbsp;
+	      	<a href="../html/about.html" class="navBarLink">About Us</a> &nbsp;
+	      	<span id="currentPageNav">Login</span>
+
+		</h1>
+
+		<!-- Website slogan -->
+		<header>
+			<i> <b> "Just use your imagination!" </b> </i>
+		</header>
+
+		<br><br>
+
+		<form action = "/cgi-bin/test.cgi" name = "myForm" onsubmit = "return(validate());">
+         <table cellspacing = "2" cellpadding = "2" border = "1">
+            
+            <tr>
+               <td align = "right">First Name</td>
+               <td><input type = "text" name = "FirstName" /></td>
+            </tr>
+
+            <tr>
+               <td align = "right">Last Name</td>
+               <td><input type = "text" name = "LastName" /></td>
+            </tr>
+
+            <tr>
+               <td align = "right">Address</td>
+               <td><input type = "text" name = "Address" /></td>
+            </tr>
+
+            <tr>
+               <td align = "right">City</td>
+               <td><input type = "text" name = "City" /></td>
+            </tr>
+
+            <tr>
+               <td align = "right">State</td>
+               <td>
+                  <select name = "Country">
+                     <option value = "1" selected>Alabama</option>
+                     <option value = "2">Alaska</option>
+                     <option value = "3">Arizona</option>
+                     <option value = "4">Arkansas</option>
+                     <option value = "5">California</option>
+                     <option value = "6">Colorado</option>
+                     <option value = "7">Connecticut</option>
+                     <option value = "8">Delaware</option>
+                     <option value = "9">Florida</option>
+                     <option value = "10">Georgia</option>
+                     <option value = "11">Hawaii</option>
+                     <option value = "12">Idaho</option>
+                     <option value = "13">Illinois</option>
+                     <option value = "14">Indiana</option>
+                     <option value = "15">Iowa</option>
+                     <option value = "16">Kansas</option>
+                     <option value = "17">Kentucky</option>
+                     <option value = "18">Louisiana</option>
+                     <option value = "19">Maine</option>
+                     <option value = "20">Maryland</option>
+                     <option value = "21">Massachusetts</option>
+                     <option value = "22">Michigan</option>
+                     <option value = "23">Minnesota</option>
+                     <option value = "24">Mississippi</option>
+                     <option value = "25">Missouri</option>
+                     <option value = "26">Montana</option>
+                     <option value = "27">Nebraska</option>
+                     <option value = "28">Nevada</option>
+                     <option value = "29">New Hampshire</option>
+                     <option value = "30">New Jersey</option>
+                     <option value = "31">New Mexico</option>
+                     <option value = "32">New York</option>
+                     <option value = "33">North Carolina</option>
+                     <option value = "34">North Dakota</option>
+                     <option value = "35">Ohio</option>
+                     <option value = "36">Oklahoma</option>
+                     <option value = "37">Oregon</option>
+                     <option value = "38">Pennsylvania</option>
+                     <option value = "39">Rhode Island</option>
+                     <option value = "40">South Carolina</option>
+                     <option value = "41">South Dakota</option>
+                     <option value = "42">Tennessee</option>
+                     <option value = "43">Texas</option>
+                     <option value = "44">Utah</option>
+                     <option value = "45">Vermont</option>
+                     <option value = "46">Virginia</option>
+                     <option value = "47">Washington</option>
+                     <option value = "48">West Virginia</option>
+                     <option value = "49">Wisconsin</option>
+                     <option value = "50">Wyoming</option>
+                  </select>
+               </td>
+            </tr>
+
+            <tr>
+               <td align = "right">Zip Code</td>
+               <td><input type = "text" name = "Zip" /></td>
+            </tr>
+
+            <tr>
+               <td align = "right">Phone</td>
+               <td><input type = "text" name = "Zip" /></td>
+            </tr>
+            
+            <tr>
+               <td align = "right">Email</td>
+               <td><input type = "text" name = "EMail" /></td>
+            </tr>
+            
+            <tr>
+               <td align = "right"></td>
+               <td><input type = "submit" value = "Submit" /></td>
+            </tr>
+            
+         </table>
+      </form>      
+
+		<br><br>
+
+		<!-- (Totally legit) Copyright info at the bottom of the page -->
+		<footer>
+			<small>
+				Copyright 2021 Mom's Backyard, Inc.
+			</small>
+		</footer>
+
+		<br>
+
+	</body>
+</html>
+      

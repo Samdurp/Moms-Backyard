@@ -106,8 +106,12 @@ function validatePhone()
 function validateEmail() 
 {
 	var x = document.forms["loginForm"]["Email"].value;
-    const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    if (re.test(x) == false)
+
+	// Full disclosure: I found this regular expression online that's useful for validating emails. 
+	// I've used this same regular expression in the past for email validation so I figured it would work here as well.
+    const regEx = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    
+    if (regEx.test(x) == false)
     {
     	alert("Invalid email address");
     	return false;

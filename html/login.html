@@ -12,6 +12,9 @@
 		<!-- Linking CSS -->
 		<link rel="stylesheet" href="../css/stylesheet.css">
 
+		<!-- Linking Javascript -->
+		<script src="../javascript/javascript.js"></script>
+
 		<meta charset="UTF-8">
 	</head>
 
@@ -28,42 +31,29 @@
 	      	<a href="../html/services.html" class="navBarLink">Services</a> &nbsp;
 	      	<a href="../html/about.html" class="navBarLink">About Us</a> &nbsp;
 	      	<span id="currentPageNav">Login</span>
-
 		</h1>
 
-		<!-- Website slogan -->
-		<header>
-			<i> <b> "Just use your imagination!" </b> </i>
-		</header>
+		<br>
 
-		<br><br>
+		<form action = "../index.html" name = "loginForm" onsubmit = "return validate();">
+          
+            <span>First Name </span><br>
+            <input type = "text" name = "FirstName" />
+            <br><br>
 
-		<form action = "/cgi-bin/test.cgi" name = "myForm" onsubmit = "return(validate());">
-         <table cellspacing = "2" cellpadding = "2" border = "1">
-            
-            <tr>
-               <td align = "right">First Name</td>
-               <td><input type = "text" name = "FirstName" /></td>
-            </tr>
+            <span>Last Name </span><br>
+            <input type = "text" name = "LastName" />
+            <br><br>
 
-            <tr>
-               <td align = "right">Last Name</td>
-               <td><input type = "text" name = "LastName" /></td>
-            </tr>
+            <span>Address </span><br>
+            <input type = "text" name = "Address" />
+            <br><br>
 
-            <tr>
-               <td align = "right">Address</td>
-               <td><input type = "text" name = "Address" /></td>
-            </tr>
+            <span>City </span><br>
+            <input type = "text" name = "City" />
+            <br><br>
 
-            <tr>
-               <td align = "right">City</td>
-               <td><input type = "text" name = "City" /></td>
-            </tr>
-
-            <tr>
-               <td align = "right">State</td>
-               <td>
+			<span>State </span><br>
                   <select name = "Country">
                      <option value = "1" selected>Alabama</option>
                      <option value = "2">Alaska</option>
@@ -116,30 +106,21 @@
                      <option value = "49">Wisconsin</option>
                      <option value = "50">Wyoming</option>
                   </select>
-               </td>
-            </tr>
+                  <br><br>
 
-            <tr>
-               <td align = "right">Zip Code</td>
-               <td><input type = "text" name = "Zip" /></td>
-            </tr>
+            <span>Zip Code </span><br>
+            <input type = "text" name = "Zip" />
+            <br><br>
 
-            <tr>
-               <td align = "right">Phone</td>
-               <td><input type = "text" name = "Zip" /></td>
-            </tr>
+            <span>Phone Number </span><br>
+            <input type = "text" name = "Phone" />
+            <br><br>
             
-            <tr>
-               <td align = "right">Email</td>
-               <td><input type = "text" name = "EMail" /></td>
-            </tr>
+            <span>Email </span><br>
+            <input type = "text" name = "Email" />
+            <br><br>
             
-            <tr>
-               <td align = "right"></td>
-               <td><input type = "submit" value = "Submit" /></td>
-            </tr>
-            
-         </table>
+			<input type = "submit" value = "Submit" />
       </form>      
 
 		<br><br>

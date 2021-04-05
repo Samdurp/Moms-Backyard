@@ -20,6 +20,11 @@ html
 	background-color: #15202b;
 }
 
+input
+{
+	width: 140px;
+}
+
 header
 {
 	/* Expanding animation */

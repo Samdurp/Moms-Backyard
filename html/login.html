@@ -30,9 +30,13 @@
 	      	<a href="../index.html" class="navBarLink">Home</a> &nbsp;
 	      	<a href="../html/services.html" class="navBarLink">Services</a> &nbsp;
 	      	<a href="../html/about.html" class="navBarLink">About Us</a> &nbsp;
-	      	<span id="currentPageNav">Login</span>
+	      	<span id="currentPageNav">Register</span>
 		</h1>
 
+		<!-- <img src = "../images/momhappy.png" class = "peoplePics"> -->
+
+		<br>
+		<p> "Make an account with us! <small><small><small>...you rabblerousers</small></small></small>"</p>
 		<br>
 
 		<form action = "../index.html" name = "loginForm" onsubmit = "return validate();">
@@ -114,11 +118,19 @@
 
             <span>Phone Number </span><br>
             <input type = "text" name = "Phone" />
+            <br>
+            <input type = "radio" id = "personal" name = "numberType" value = "personal" checked = "checked"> Personal number
+            <br>
+            <input type = "radio" id = "business" name = "numberType" value = "business"> Business number
             <br><br>
             
             <span>Email </span><br>
             <input type = "text" name = "Email" />
             <br><br>
+
+            <br>
+			<p> By clicking submit, you agree to <i> Mom's Backyard Inc </i> sending you <br> promotional emails and the occasional Facebook meme that Mom <br>finds funny.</p>
+			<br>
             
 			<input type = "submit" value = "Submit" />
       </form>      

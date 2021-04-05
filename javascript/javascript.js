@@ -1,3 +1,4 @@
+// Driver function that is called by the form being submitted
 function validate()
 {
 	if (validateFirstName() == false)
@@ -25,6 +26,7 @@ function validate()
 		return false;
 }
 
+// Validates first name
 function validateFirstName()
 {
 	var x = document.forms["loginForm"]["FirstName"].value;
@@ -35,6 +37,7 @@ function validateFirstName()
 	}
 }
 
+// Validates last name
 function validateLastName()
 {
 	var x = document.forms["loginForm"]["LastName"].value;
@@ -45,6 +48,7 @@ function validateLastName()
 	}
 }
 
+// Validates address
 function validateAddress()
 {
 	var x = document.forms["loginForm"]["Address"].value;
@@ -55,6 +59,7 @@ function validateAddress()
 	}
 }
 
+// Validates city
 function validateCity()
 {
 	var x = document.forms["loginForm"]["City"].value;
@@ -65,6 +70,7 @@ function validateCity()
 	}
 }
 
+// Validates zip code
 function validateZip()
 {
 	var x = document.forms["loginForm"]["Zip"].value;
@@ -80,6 +86,7 @@ function validateZip()
 	}
 }
 
+// Validates phone number
 function validatePhone()
 {
 	var x = document.forms["loginForm"]["Phone"].value;
@@ -95,6 +102,7 @@ function validatePhone()
 	}
 }
 
+// Validates email
 function validateEmail() 
 {
 	var x = document.forms["loginForm"]["Email"].value;
